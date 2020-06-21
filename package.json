@@ -1,0 +1,40 @@
+{
+  "name": "ibtc-contracts",
+  "version": "0.0.1",
+  "description": "Repository for all the ibtc Contracts ",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test --network local ",
+    "deployLocal": "truffle migrate --network local",
+    "deployDev": "truffle migrate --network devnet",
+    "deployTest": "truffle migrate --network testnet",
+    "deployLive": "truffle migrate --network mainnet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i-btc/contracts.git"
+  },
+  "author": "I-BTC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/i-btc/contracts/issues"
+  },
+  "homepage": "https://github.com/i-btc/contracts#readme",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "1.0.23",
+    "dotenv": "8.2.0",
+    "http": "0.0.0",
+    "https": "1.0.0",
+    "retry": "0.12.0",
+    "truffle": "5.0.44",
+    "truffle-security": "^1.7.1",
+    "web3-core-helpers": "1.2.4",
+    "xhr2-cookies": "1.1.0"
+  },
+  "devDependencies": {
+    "solc": "0.5.15"
+  }
+}
